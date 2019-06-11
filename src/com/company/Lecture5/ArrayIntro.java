@@ -1,6 +1,6 @@
 package com.company.Lecture5;
 
-import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayIntro {
@@ -14,25 +14,40 @@ public class ArrayIntro {
         System.out.println("\n");
 //        swap(nums,first,second);
 //        display1(nums);
-        incby2(nums);
+//        incby2(nums);
         }
 
-    public static void display1(int[] nums) {
+    public static void display1(int[] nums) {  // Display function to print array also call traverse array
         for (int i =0; i<nums.length; i++){
             System.out.print(nums[i] +" ");
         }
     }
-    public static void swap(int[] nums, int first, int second){
+    public static void swap(int[] nums, int first, int second){ // Function to swap array to elements
             int t = nums[first];
             nums[first] = nums[second];
             nums[second]=t;
         }
 
-    public static void incby2(int[] nums) {
+    public static void incby2(int[] nums) { // Function to add 2 in every element of array
         for (int i =0; i<nums.length; i++){
             nums[i]= nums[i]+2;
             System.out.print(nums[i]+" ");
         }
+    }
+
+    public static void reverse(int[] nums) {  //Function to reverse the full array
+        for (int i = 0; i <nums.length/2 ; i++) {
+            int temp = nums[i];
+            nums[i] =nums[nums.length-i-1];
+            nums[nums.length-i-1]= temp;
+//            swap(nums,i,nums.length-i-1);
+
+        }
+
+    }
+
+    public static void indexofmax(int nums[]) {
+
     }
 
     }
