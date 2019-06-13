@@ -27,11 +27,19 @@ public class Shorting {
 
     public static void insersion(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
-            for (int j = 0; j < 0; j--) {
+            for (int j = i+1; j > 0; j--) {
                 if (nums[j] < nums[j - 1]) {
-                    ArrayIntro.swap(nums, j, j + 1);
+                    ArrayIntro.swap(nums, j, j - 1);
                 }
             }
+        }
+    }
+    public static void selection(int nums[]){
+        for (int i = 0; i <nums.length ; i++) {
+
+            int max=ArrayIntro.maxindex(nums,0,nums.length-i-1);
+            ArrayIntro.swap(nums,max,nums.length-1);
+
         }
     }
 }

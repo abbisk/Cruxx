@@ -45,9 +45,14 @@ public class ArrayIntro {
         }
 
     }
-
-    public static void indexofmax(int nums[]) {
-
+    public static int maxindex(int ar[],int start,int end){
+        int max=0;
+        for (int i = start; i <=end; i++) {
+            if(ar[i]>ar[max]){
+                max=i;
+            }
+        }
+        return max;
     }
 
     }

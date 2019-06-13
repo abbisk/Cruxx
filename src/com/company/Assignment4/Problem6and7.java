@@ -15,13 +15,17 @@ public class Problem6and7 {
         for (int i = 0; i <arr.length ; i++) {
             System.out.println("Enter the "+i+" element of array");
             arr[i]=arr1[i]= obj.nextInt();
-            System.out.println("Enter array to check it is inverse of first or not");
+
+        }
+        System.out.println("Enter array to check it is inverse of first or not");
+        for (int i = 0; i <arr.length ; i++) {
             arr2[i] = obj.nextInt();
 
         }
 
         arrainverse(arr,arr1);
         System.out.println(Arrays.toString(arr1));
+        checkinverse(arr1,arr2);
 
     }
 
@@ -43,4 +47,10 @@ public class Problem6and7 {
         }
 
     }
+
+    public static void checkinverse(int arr2[],int arr1[]) {
+        System.out.println(arr1==arr2);
+        }
+
+
 }
