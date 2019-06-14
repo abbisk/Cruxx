@@ -68,12 +68,12 @@ public class Recursion {
 
     }
 
-    public static int facrorial(int i) {
+    public static int factorial(int i) {
         if(i==0){
             return 1;
         }
 
-        return i* facrorial(i-1);
+        return i* factorial(i-1);
     }
 
     public static int fibonecci(int i) {
