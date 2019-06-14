@@ -11,8 +11,11 @@ public class class2 {
 //        pattern1(4,0);
         /////////////// For bubbleshort
         int ar[] = {5,4,3,2,1};
-        bubblesort(ar,4,0);
+        int i = ar.length-1;
+        bubblesort(ar,i,0);
         System.out.println(Arrays.toString(ar));
+        String s  = "abc";
+        subsequence("","abc");
     }
 
     public static boolean find(int arr[],int element ,int index) {
@@ -61,7 +64,7 @@ public class class2 {
 
     }
     public static void bubblesort(int ar[],int i,int j) {
-        if(ar.length==0){
+        if(i==0){
             return;
         }
         if (i == j) {
@@ -73,8 +76,21 @@ public class class2 {
             ar[j]= ar[j+1];
             ar[j+1]= temp;
         }
-        bubblesort(ar,i-1,0);
+        bubblesort(ar,i,j+1);
 
+
+    }
+
+    public static void subsequence(String processed , String unprocessed) {
+        if(unprocessed.isEmpty()){
+            System.out.println(processed);
+            return;
+        }
+        char ch = unprocessed.charAt(0);
+        unprocessed = unprocessed.substring(1);
+        subsequence(processed+ch,unprocessed);
+        subsequence(processed+(int)ch,unprocessed);
+        subsequence(processed,unprocessed);
 
     }
 }
