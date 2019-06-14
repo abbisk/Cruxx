@@ -11,7 +11,7 @@ public class class2 {
 //        pattern1(4,0);
         /////////////// For bubbleshort
         int ar[] = {5,4,3,2,1};
-        bubblesort(ar,0);
+        bubblesort(ar,4,0);
         System.out.println(Arrays.toString(ar));
     }
 
@@ -60,18 +60,20 @@ public class class2 {
         pattern1(row,column+1);
 
     }
-    public static void bubblesort(int ar[],int row,int col) {
+    public static void bubblesort(int ar[],int i,int j) {
         if(ar.length==0){
             return;
         }
-        bubblesort(ar,row-1,col+1);
-        if(ar[col]>ar[col+1]){
-            int temp = ar[col];
-            ar[col]= ar[col+1];
-            ar[col+1]= temp;
-            bubblesort(ar,row-1,0);
+        if (i == j) {
+            bubblesort(ar,i-1,0);
             return;
         }
+        if(ar[j]>ar[j+1]){
+            int temp = ar[j];
+            ar[j]= ar[j+1];
+            ar[j+1]= temp;
+        }
+        bubblesort(ar,i-1,0);
 
 
     }
