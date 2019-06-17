@@ -3,11 +3,13 @@ package com.company.Lecture7;
 public class Recursion {
     public static void main(String[] args) {
 //        p4();
-        int i = 5;
-//        printinc(5);
+        int i =5;
+        int j =5;
+        int k = 1;
+        printinc(1);
 //        printdec(5);
 //        printincdec(5);
-        System.out.println(fibonecci(5));
+//        System.out.println(fibonecci(5));
     }
 
     public static void p4() {
@@ -37,13 +39,14 @@ public class Recursion {
     public static void p0() {
     }
 
-    public static void printinc(int i) {
-        if (i == 0) {
+    public static void printinc(int k) {
+        if (k == 5) {
+            System.out.println(k);
             return;
 
         }
-        printinc(i - 1);
-        System.out.println(i);
+        System.out.println(k);
+        printinc(k + 1);
 
     }
 

@@ -11,10 +11,10 @@ public class problem1 {
             return;
         }
         if(colum==row){
-            System.out.println();
-            pattern1(row-1,0);
-            return;
+            System.out.println();}
+
+        pattern1(row-1,0);
+        System.out.print("*");
         }
 
     }
-}
