@@ -8,11 +8,10 @@ public class problem8 {
         while (row<=n){
             int col =1;
             while(col<=row){
-                    System.out.println("1");
 
                 if (col==1 || row == col){
 
-                    System.out.print(row-1 + " ");
+                    System.out.print(row+ " ");
 
                 }
                 else{
