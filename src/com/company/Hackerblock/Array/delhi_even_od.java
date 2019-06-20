@@ -11,27 +11,30 @@ public class delhi_even_od {
     }
     public static void evenodd(Scanner s) {
         int n = s.nextInt();
-        int i =0;
 
-        while (i<=n){
+        while (n>0){
             int num = s.nextInt();
-            int sum = 0;
+            int sumeven = 0;
+            int sumodd = 0;
             while (num>0){
                 int rem = num%10;
                 num = num/10;
-                sum = sum+rem;
+
+                if (rem %2 ==0){
+                    sumeven = sumeven+rem;
+                }
+                else {
+                    sumodd = sumodd+rem;
+                }
 
             }
-            if (sum % 2 == 0 && sum % 4 == 0) {
+            if (sumeven % 4 == 0 || sumodd % 3==0) {
                 System.out.println("Yes");
-            } else if (sum % 2 != 0 && sum % 3 == 0) {
-
-                System.out.println("Yes");
-            } else {
+            }
+            else {
                 System.out.println("No");
             }
-            i = i+
-                    1;
+            n = n-1;
 
         }
 

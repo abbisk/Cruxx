@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Merge_sort {
     public static void main(String[] args) {
         int arr[] = {5,4,3,2,1};
+        System.out.println(Arrays.toString(msort(arr)));
 
     }
 
@@ -37,8 +38,19 @@ public class Merge_sort {
                 i++;
                 k++;
             }
+            while(i < first.length){
+                mix[k]= first[i];
+                i++;
+                k++;
+            }
+            while (j<second.length){
+                mix[k]= first[j];
+                i++;
+                k++;
+            }
 
 
         }
+        return mix;
     }
 }

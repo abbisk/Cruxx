@@ -8,16 +8,15 @@ public class problem10{
         int b = 1;
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter number to get Fibonecci");
-        String ip = obj.nextLine();
-        int num = Integer.parseInt(ip);
+        int num = obj.nextInt();
         int i=1;
         while (i<=num){
-            int c = 2;
-            while (c<=i+2){
+            int c = 1;
+            while (c<=i){
+                System.out.print(a+" ");
                 int t= a+b;
                 a = b;
                 b = t;
-                System.out.print(a+" ");
                 c= c+1;
             }
             System.out.println("\n");

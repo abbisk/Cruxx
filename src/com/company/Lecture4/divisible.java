@@ -7,14 +7,15 @@ public class divisible {
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter number");
         int num = obj.nextInt();
-        System.out.println(countof5(num));
+        int countof = obj.nextInt();
+        System.out.println(countof5(num,countof));
     }
 
-    public static int countof5(int num) {
+    public static int countof5(int num,int countof) {
         int count = 0;
         while (num>0){
             int rem = num%5;
-            if (num%5==0){
+            if (rem==countof){
                 count = count+1;
             }
             num = num/10;

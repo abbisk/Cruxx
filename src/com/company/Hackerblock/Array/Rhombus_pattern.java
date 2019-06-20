@@ -16,12 +16,12 @@ public class Rhombus_pattern {
                     else {
                         System.out.print("*");
                     }
-//                    if(row==n || row==1 && col>row-1){
-//                        System.out.print("*");
-//                    }
+                    if(row==n || row==1 && col>row-1){
+                        System.out.print("*");
+                    }
                     col = col-1;
                 }
-//                System.out.print("*");
+                System.out.print("*");
                 row = row - 1;
 
                 System.out.println();
