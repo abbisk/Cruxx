@@ -4,18 +4,18 @@ import java.util.Arrays;
 
 public class class2 {
     public static void main(String[] args) {
-//        int arr[] = {1,2,3,4,5};
-//        System.out.println(find(arr,99,0));
+        int arr[] = {1,2,3,4,5};
+        System.out.println(find(arr,99,0));
 //        System.out.println(findindex(arr,4,0));
 //        System.out.println(checkshort(arr,0));
 //        pattern1(4,0);
         /////////////// For bubbleshort
-        int ar[] = {5,4,3,2,1};
-        int i = ar.length-1;
-        bubblesort(ar,i,0);
-        System.out.println(Arrays.toString(ar));
-        String s  = "abc";
-        subsequence("","abc");
+//        int ar[] = {5,4,3,2,1};
+//        int i = ar.length-1;
+//        bubblesort(ar,i,0);
+//        System.out.println(Arrays.toString(ar));
+//        String s  = "abc";
+//        subsequence("","abc");
     }
 
     public static boolean find(int arr[],int element ,int index) {
