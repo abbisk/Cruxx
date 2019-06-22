@@ -27,7 +27,7 @@ public class Stack {
     }
     public int pop() throws Exception{
         if(isempty()){
-            throw  new Exception("The array is Empty");
+            throw  new myException("The array is Empty");
 
         }
 
