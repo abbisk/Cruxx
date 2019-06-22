@@ -1,26 +1,31 @@
 package com.company.Lecture11;
 
 public class human {
-    String name; /////////Instance variable
-    int bankbalance;//////// State
+    String name;   //Instance variable
+
+    int bankbalance;  // State
+
     static int population = 0;
 
-    /////Final variable does not allow to change any variable
+    //    Final does not allow to change any variable
 
     public human(){
-//        bankbalance = 10000;//////// State
-        /// Constructure inside condtructure
+//        bankbalance = 10000;  // State
+        /// Constructor inside constructor
         this(1000000,"annoymus");
     }
 
 
 
-    public human (int bankbalance){ // Constructure with this keyword
-        this.bankbalance = bankbalance;
+    public human (int bankbalance){// Constructor with this keyword
+
+//        this.bankbalance = bankbalance;
+        this(bankbalance,"Anonymous");
     }
 
-    public human (int bankbalance, String name){  // Constructure woth two parameter
-        //here this is referencing towards constructure name and balance
+    public human (int bankbalance, String name){  // Constructor with two parameter
+
+        //here bank balance is pointing towards class bank balance
 
         this.bankbalance= bankbalance;
         this.name = name;
@@ -35,9 +40,12 @@ public class human {
         System.out.println(name + "Yar garib ho raha hu " + bankbalance);
         return t;
     }
-    ////////////  Behaviour 2 type state dependent and independent
+
+    //Behaviour has 2 type state 1.dependent and 2.independent
+
     public void eat(){
         System.out.println("I am hungry");
+
     }
 
     @Override
