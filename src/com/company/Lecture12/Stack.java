@@ -1,4 +1,6 @@
-package com.company.Lecture11;
+package com.company.Lecture12;
+
+import com.company.Lecture11.myException;
 
 public class Stack {
     private  int data[];
