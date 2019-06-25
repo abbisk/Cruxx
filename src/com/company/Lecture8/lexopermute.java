@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class lexopermute {
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "ab";
         int freq[] = frequency(s);
 //        System.out.println(Arrays.toString(freq));
-        lexopermute("",freq,3);
+        lexopermute("",freq,2);
 
     }
 
@@ -30,7 +30,7 @@ public class lexopermute {
         }
         for (int i = 0; i <freq.length ; i++) {
             if(freq[i]>0){
-                freq[i]--;
+//                freq[i]--;
                 lexopermute(processed+(char)(i+'a'),freq,length-1);
                 freq[i]++;
             }
