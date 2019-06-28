@@ -7,9 +7,9 @@ public class Stringbuilder {
 
 //        System.out.println(builder.append(" World"));
 //        builder.setCharAt(0,'!');
-        System.out.println(builder);
+//        System.out.println(builder);
 //        System.out.println('a'-'z');
-//        System.out.println(toggle(s));
+        System.out.println(toggle(s));
 
         }
 

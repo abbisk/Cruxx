@@ -1,14 +1,14 @@
-package com.company.Lecture13;
+package com.company.Lecture14;
 
 public class Queuecircular {
 
-    private int data[];
+    protected int data[];
 
-    private int DEFAULT_SIZE = 10;
+    protected int DEFAULT_SIZE = 10;
 
     private int end = 0;
-    private int front = 0;
-    private int size = 0;
+    protected int front = 0;
+    protected int size = 0;
 
 
     public Queuecircular() {

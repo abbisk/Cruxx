@@ -6,7 +6,7 @@ public class lexopermute {
     public static void main(String[] args) {
         String s = "ab";
         int freq[] = frequency(s);
-//        System.out.println(Arrays.toString(freq));
+        System.out.println(Arrays.toString(freq));
         lexopermute("",freq,2);
 
     }
