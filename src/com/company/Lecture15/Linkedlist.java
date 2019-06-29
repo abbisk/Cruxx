@@ -78,7 +78,7 @@ public class Linkedlist {
         }
         Node node = getnode(size-2);
         int temp = tail.value;
-        tail=node;ide
+        tail=node;
         tail.next=null;
         size--;
         return temp;
