@@ -6,7 +6,7 @@ public class Queuecircular {
 
     protected int DEFAULT_SIZE = 10;
 
-    private int end = 0;
+    protected int end = 0;
     protected int front = 0;
     protected int size = 0;
 

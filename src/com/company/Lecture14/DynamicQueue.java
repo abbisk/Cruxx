@@ -3,19 +3,21 @@
 //public class DynamicQueue extends Queuecircular {
 //    @Override
 //    public boolean insert(int element) {
-//        return super.insert(element);
-//        if (isfull()){
-//            int temp[] = new int[data.length*2];
+//        if(isFull()){
+//            System.out.println("Here we are doubling up");
+//            int temp[]=new int[data.length*2];
+//
 //            for (int i = 0; i <data.length ; i++) {
-//                temp[i] = data[i];
+//                temp[i]=data[(front+i)%data.length];
+//
+//
 //            }
-//            data = temp;
+//            front=0;
+//            end=data.length;
+//            data=temp;
 //        }
+//
+//        return super.insert(element);
 //    }
-//
-//    public static void main(String[] args) {
-//
-//
-//
-//    }
+//}
 //}
