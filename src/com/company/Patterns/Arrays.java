@@ -1,6 +1,5 @@
-package com.company.Practice;
+package com.company.Patterns;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Arrays {

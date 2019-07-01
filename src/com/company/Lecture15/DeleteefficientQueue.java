@@ -2,6 +2,7 @@ package com.company.Lecture15;
 
 import java.util.Stack;
 
+
 public class DeleteefficientQueue {
     Stack<Integer> first;
     Stack<Integer> second;
