@@ -22,7 +22,7 @@ public class BinaryTree {
 
         if (dir.equals("l")){
             node.left = add(node.left, sc);
-        } else {
+        } else{
             node.right = add(node.right, sc);
         }
 
