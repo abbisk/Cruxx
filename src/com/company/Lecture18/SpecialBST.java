@@ -1,8 +1,6 @@
 package com.company.Lecture18;
 
 
-import java.util.BitSet;
-
 public class SpecialBST <T extends Comparable <T>> { // Here t is interface thats why it is extending T
     private Node root;
 
@@ -54,9 +52,22 @@ public class SpecialBST <T extends Comparable <T>> { // Here t is interface that
             displayinrange(node.right, start, end);
         }
     }
-    private int closestbigger(T target){
+    public T closestbigger(T value){
+        return closestbigger(root, value);
+    }
+    private T closestbigger(Node node, T value){
+        if(node.value.compareTo(value)<0){
+            closestbigger(node.right,value);
+        }
+        if (node.value.compareTo(value)>0){
+            closestbigger(node.left,value);
+        }
+        if(node ==null){
+//            if(Math.min(node.value,node+1.value.ne))   // Solve this for the
+            return node.value;
+        }
 
-
+        return value;
     }
 
     public boolean find(T target){

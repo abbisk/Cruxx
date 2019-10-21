@@ -6,8 +6,8 @@ public class Recursion {
         int i =5;
         int j =5;
         int k = 1;
-        printinc(1);
-//        printdec(5);
+//        printinc(1);
+        printdec(5);
 //        printincdec(5);
 //        System.out.println(fibonecci(5));
     }
@@ -50,13 +50,21 @@ public class Recursion {
 
     }
 
-    public static void printdec(int i) {
+    public static void printinc1(int i) {
         if (i == 0) {
             return;
 
         }
         printdec(i - 1);
         System.out.println(i);
+    }
+    public static void printdec(int i) {
+        if (i == 0) {
+            return;
+
+        }
+        System.out.println(i);
+        printdec(i-1);
     }
 
     public static void printincdec(int i) {
